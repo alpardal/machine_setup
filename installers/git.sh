@@ -11,3 +11,7 @@ diff_file="$HOME/.bin/diff-highlight"
 
 curl $diff_path -o $diff_file
 chmod +x $diff_file
+
+# keyring helper:
+sudo apt-get install libgnome-keyring-dev -y
+sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
