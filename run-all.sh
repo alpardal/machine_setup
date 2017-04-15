@@ -2,15 +2,23 @@
 
 set -e
 
-cd installers
+files="
+  basics
+  git
+  zsh
+  dotfiles
+  synapse
+  vim
+  apps
+  ruby
+  node
+  postgresql
+  haskell
+  fonts
+"
 
-source basics.sh
-source git.sh
-source zsh.sh
-source dotfiles.sh
-source synapse.sh
-source vim.sh
-source apps.sh
-source ruby.sh
-source node.sh
-source postgresql.sh
+for file in $files; do
+  echo "Installing '${file}'"
+  (source "installers/${file}.sh")
+  echo "-------------------------------------------------------------"
+done

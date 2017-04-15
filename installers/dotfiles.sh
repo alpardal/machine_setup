@@ -1,10 +1,6 @@
 #!/bin/bash
 
+git clone https://github.com/alpardal/dotfiles.git ~/dotfiles
 
-(cd ~
-git clone https://github.com/alpardal/dotfiles.git
-)
-
-(cd ~/dotfiles
+cd ~/dotfiles
 ./install.sh
-)
