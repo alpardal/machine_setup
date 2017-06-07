@@ -6,9 +6,9 @@ files="
   basics
   git
   zsh
+  vim
   dotfiles
   synapse
-  vim
   apps
   ruby
   node
