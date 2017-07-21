@@ -14,6 +14,7 @@ files="
   node
   postgresql
   haskell
+  rust
   fonts
 "
 
