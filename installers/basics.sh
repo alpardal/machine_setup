@@ -13,6 +13,8 @@ packages="
   libncurses-dev
   ubuntu-restricted-extras
   curl
+  tree
+  tmux
 "
 
 for pack in $packages; do

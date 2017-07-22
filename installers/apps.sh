@@ -3,7 +3,7 @@
 sudo add-apt-repository ppa:indicator-multiload/stable-daily -y
 sudo apt-get update
 
-apps="tree tmux transmission xtrlock indicator-multiload silversearcher-ag virtualbox okular okular-extra-backends"
+apps="transmission xtrlock indicator-multiload silversearcher-ag virtualbox okular okular-extra-backends arc-theme"
 
 for app in $apps; do
   sudo apt-get install $app -y
