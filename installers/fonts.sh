@@ -13,4 +13,7 @@ curl $ubuntu_mono -L -o ~/.fonts/Ubuntu\ Mono\ derivative\ Powerline\ Regular.tt
 hack='https://github.com/powerline/fonts/blob/master/Hack/Hack-Regular.ttf?raw=true'
 curl $hack -L -o ~/.fonts/Hack\ derivative\ Powerline\ Regular.ttf
 
+fura='https://github.com/powerline/fonts/blob/master/FiraMono/FuraMono-Regular%20Powerline.otf?raw=true'
+curl $fura -L -o ~/.fonts/FuraMono-Regular%20Powerline.otf
+
 sudo fc-cache -f -v
