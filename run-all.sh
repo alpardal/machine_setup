@@ -9,6 +9,7 @@ files="
   vim
   dotfiles
   synapse
+  syndaemon
   apps
   ruby
   node
