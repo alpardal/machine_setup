@@ -6,11 +6,13 @@ sudo apt-get install git -y
 
 mkdir -p ~/.bin
 
-diff_path='/usr/share/doc/git/contrib/diff-highlight/diff-highlight'
+src_path='/usr/share/doc/git/contrib/diff-highlight/'
+(cd $src_path && sudo make)
+
 diff_file="$HOME/.bin/diff-highlight"
 user=`whoami`
 
-sudo cp $diff_path $diff_file -f
+sudo cp "${src_path}/diff-highlight" $diff_file -f
 sudo chown $user $diff_file
 chmod +x $diff_file
 
