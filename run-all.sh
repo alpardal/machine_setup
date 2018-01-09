@@ -5,17 +5,17 @@ set -e
 files="
   basics
   git
-  zsh
-  vim
-  dotfiles
-  synapse
-  apps
   ruby
   node
   postgresql
   haskell
   rust
   fonts
+  synapse
+  zsh
+  vim
+  dotfiles
+  apps
 "
 
 for file in $files; do

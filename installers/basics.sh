@@ -15,6 +15,9 @@ packages="
   curl
   tree
   tmux
+  silversearcher-ag
+  jq
+  virtualbox
 "
 
 for pack in $packages; do
