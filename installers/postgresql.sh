@@ -6,10 +6,6 @@ sudo apt-get update
 
 sudo apt-get install postgresql-9.6 libpq-dev -y
 
-echo 'Remember to create your role:'
+user=`whoami`
 
-echo "
-$ sudo su postgres -c psql
-postgres=# CREATE ROLE <username> SUPERUSER LOGIN;
-postgres=# \q
-"
+sudo su postgres -c "psql -c 'CREATE ROLE $user SUPERUSER LOGIN;'"
