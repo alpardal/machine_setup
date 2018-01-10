@@ -20,6 +20,8 @@ files="
 
 for file in $files; do
   echo "Installing '${file}'"
+  echo
   (source "installers/${file}.sh")
-  echo "-------------------------------------------------------------"
+
+  clear
 done
