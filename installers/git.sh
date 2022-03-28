@@ -16,6 +16,8 @@ sudo cp "${src_path}/diff-highlight" $diff_file -f
 sudo chown $user $diff_file
 chmod +x $diff_file
 
-# keyring helper:
-sudo apt-get install libgnome-keyring-dev -y
-sudo make --directory=/usr/share/doc/git/contrib/credential/gnome-keyring
+# libsecret credential helper:
+sudo apt-get install libsecret-1-0 libsecret-1-dev
+sudo make --directory=/usr/share/doc/git/contrib/credential/libsecret
+git config --global credential.helper \
+   /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
