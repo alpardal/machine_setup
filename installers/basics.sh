@@ -15,6 +15,8 @@ packages="
   curl
   tree
   tmux
+  exa
+  bat
   silversearcher-ag
   jq
   virtualbox
@@ -23,3 +25,5 @@ packages="
 for pack in $packages; do
   sudo apt-get install $pack -y
 done
+
+sudo ln -s /usr/bin/batcat /usr/bin/bat
