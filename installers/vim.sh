@@ -24,3 +24,5 @@ sudo make install
 
 # install vim-plug:
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \\n    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+mkdir -p ~/.vim_undo
