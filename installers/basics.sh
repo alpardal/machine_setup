@@ -10,7 +10,9 @@ packages="
   linux-headers-generic
   unity-tweak-tool
   gnome-tweak-tool
+  libssl-dev
   libncurses-dev
+  libncurses5-dev
   ubuntu-restricted-extras
   curl
   tree
