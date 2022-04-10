@@ -9,3 +9,7 @@ sudo apt-get install postgresql-14 libpq-dev -y
 user=`whoami`
 
 sudo su postgres -c "psql -c 'CREATE ROLE $user SUPERUSER LOGIN;'"
+
+# set your password:
+#
+#   sudo su - postgres -c $'psql -c "ALTER ROLE <username> WITH PASSWORD \'<password>\'"'
